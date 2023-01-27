@@ -1,13 +1,13 @@
 def sock_merchant(list_of_numbers: list):
     pairs = 0
-    diccionary_of_even_or_odd = {}
-    for i in list_of_numbers:
-        if i in diccionary_of_even_or_odd:
-            diccionary_of_even_or_odd[i] += 1
+    dictionary_of_even_or_odds = {}
+    for number in list_of_numbers:
+        if number in dictionary_of_even_or_odds:
+            dictionary_of_even_or_odds[number] +=1
         else:
-            diccionary_of_even_or_odd[i] = 1
-    for i in diccionary_of_even_or_odd:
-        pairs += diccionary_of_even_or_odd[i] // 2
+            dictionary_of_even_or_odds[number] = 1
+    for i in dictionary_of_even_or_odds:
+        pairs += dictionary_of_even_or_odds[i] // 2
     return pairs
 
 
